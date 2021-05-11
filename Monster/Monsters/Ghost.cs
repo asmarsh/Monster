@@ -7,7 +7,7 @@ using static Monster.Constants.Ghost;
 
 namespace Monster.Monsters
 {
-    class Ghost : IMonster
+    public class Ghost : IMonster
     {
         private string name = "Casper";
         public string Name { get => name; set => name = value; }
