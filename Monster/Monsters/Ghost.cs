@@ -10,15 +10,15 @@ namespace Monster.Monsters
     class Ghost : IMonster
     {
         private string name = "Casper";
-        string IMonster.Name { get => name; set => name = value; }
+        public string Name { get => name; set => name = value; }
 
-        string Attack => ATTACK;
+        public string Attack() => ATTACK;
 
-        string Defend => DEFEND;
+        public string Defend() => DEFEND;
 
-        string Scare => SCARE;
+        public string Scare() => SCARE;
 
-        new string ToString => TOSTRING;
+        public override string ToString() => TOSTRING;
 
     }
 }

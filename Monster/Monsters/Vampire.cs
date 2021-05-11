@@ -10,17 +10,17 @@ namespace Monster.Monsters
     class Vampire : IMonster
     {
         private string name = "Blade";
-        string IMonster.Name { get => name; set => name = value; }
+        public string Name { get => name; set => name = value; }
 
-        string Attack => ATTACK;
+        public string Attack() => ATTACK;
 
-        string Defend => DEFEND;
+        public string Defend() => DEFEND;
 
-        string Scare => SCARE;
+        public string Scare() => SCARE;
 
-        string SecondaryAttack => SECONDARYATTACK;
+        public string SecondaryAttack() => SECONDARYATTACK;
 
-        new string ToString => TOSTRING;
+        public override string ToString() => TOSTRING;
 
     }
 }
