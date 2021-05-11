@@ -19,4 +19,9 @@ namespace Monster
 
         abstract string ToString();
     }
+
+    interface IMonsterWithSecondary : IMonster
+    {
+        abstract string SecondaryAttack();
+    }
 }
