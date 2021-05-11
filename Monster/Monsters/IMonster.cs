@@ -8,7 +8,7 @@ namespace Monster
 {
     interface IMonster
     {
-        public string Name { get; }
+        public string Name { get; set; }
 
 
         string Attack()
