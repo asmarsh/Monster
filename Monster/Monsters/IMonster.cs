@@ -8,27 +8,15 @@ namespace Monster
 {
     interface IMonster
     {
-        public string Name { get; set; }
+        abstract string Name { get; set; }
 
 
-        string Attack()
-        {
-            throw new NotImplementedException();
-        }
+        abstract string Attack();
 
-        string Scare()
-        {
-            throw new NotImplementedException();
-        }
+        abstract string Scare();
 
-        string Defend()
-        {
-            throw new NotImplementedException();
-        }
+        abstract string Defend();
 
-        string ToString()
-        {
-            throw new NotImplementedException();
-        }
+        abstract string ToString();
     }
 }
