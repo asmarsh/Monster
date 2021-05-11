@@ -7,10 +7,10 @@ using static Monster.Constants.Werewolf;
 
 namespace Monster.Monsters
 {
-    class Werewolf : IMonster
+    public class Werewolf : IMonster
     {
         private string name = "Mason";
-        string IMonster.Name { get => name; set => name = value; }
+        public string Name { get => name; set => name = value; }
 
         string Attack => ATTACK;
 
